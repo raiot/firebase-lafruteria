@@ -16,10 +16,9 @@ class Nav extends Component {
             <div>
                 <Navbar className='light-green lighten-1' brand={ brand } left>
                     <NavItem href='#/'>Inicio</NavItem>
-                    <NavItem href='#/location'>Sucursal</NavItem>
+                    <NavItem href='#/branch'>Sucursal</NavItem>
                     <NavItem href='#/menu'>Menú</NavItem>
                     <NavItem href='#/aboutus'>Acerca de</NavItem>
-                    <NavItem href='#/contact'>Contacto</NavItem>
                 </Navbar>
             </div>
         );

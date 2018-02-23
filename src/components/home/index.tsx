@@ -32,6 +32,7 @@ class Home extends Component {
                             title={ <span style={ defaultSlideStyle }>Ingredientes frescos</span> }
                             src={ greenJuice }
                             placement={ 'left' }
+                            className='slide'
                         >
                             <p style={ defaultSlideStyle }>Prueba nuestro jugo verde</p>
                             <Button

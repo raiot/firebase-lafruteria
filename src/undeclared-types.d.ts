@@ -12,6 +12,7 @@ declare module 'react-materialize' {
     const Slider: any;
     const Slide: any;
     const Footer: any;
+    const Card: any;
     export
     {
         Tabs,
@@ -26,7 +27,8 @@ declare module 'react-materialize' {
         Carousel,
         Slider,
         Slide,
-        Footer
+        Footer,
+        Card
     };
 }
 
@@ -43,4 +45,17 @@ declare module '*.jpg' {
 declare module '*.jpeg' {
     const jpeg: string;
     export default jpeg;
+}
+
+declare module '*.js' {
+    const mapsApiKey: string;
+    export {
+        mapsApiKey
+    };
+}
+
+declare module 'recompose' {
+    const withProps: any;
+    const compose: any;
+    export { withProps, compose }; 
 }
