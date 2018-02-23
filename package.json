@@ -2,11 +2,11 @@
   "name": "firebase-lafruteria",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.ts",
   "scripts": {
-    "start": "npm run clean && webpack",
+    "start": "npm run clean && webpack && node server.js",
     "clean": "rm -rf dist",
-    "start:dev": "npm start && webpack-dev-server",
+    "start:dev": "npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/raiot/firebase-lafruteria#readme",
   "dependencies": {
+    "@types/express": "^4.11.1",
     "@types/markerclustererplus": "^2.1.33",
     "@types/react": "^16.0.38",
     "@types/react-dom": "^16.0.4",
@@ -28,10 +29,12 @@
     "babel-loader": "^7.1.2",
     "babel-preset-latest": "^6.24.1",
     "css-loader": "^0.28.9",
+    "express": "^4.16.2",
     "file-loader": "^1.1.9",
     "firebase": "^4.10.0",
     "less": "^3.0.1",
     "less-loader": "^4.0.5",
+    "open": "0.0.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-google-maps": "^9.4.5",
