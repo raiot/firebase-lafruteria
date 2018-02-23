@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: path.join(__dirname, 'src', 'client', 'index.tsx'),
@@ -59,6 +60,9 @@ module.exports = {
       sourcemap: false,
       beautify: false,
       dead_code: true
-    })
+    }),
+    new HtmlWebpackPlugin({
+        template: 'index.html'
+      })
   ]
 };
