@@ -2,7 +2,8 @@ module.exports = {
     entry: "./src/index.tsx",
     output: {
         filename: "bundle.js",
-        path: __dirname + "/dist"
+        path: __dirname + "/dist",
+        publicPath: "http://localhost/dist"
     },
 
     // Enable sourcemaps for debugging webpack's output.
@@ -14,7 +15,7 @@ module.exports = {
 
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
-        extensions: [".ts", ".tsx", ".js", ".json", ".less"]
+        extensions: [".ts", ".tsx", ".js", ".json", ".less", ".png", ".jpg", ".jpeg"]
     },
 
     module: {
@@ -28,6 +29,15 @@ module.exports = {
                 }, {
                     loader: "less-loader" // compiles Less to CSS
                 }]
+            },
+            {
+                test: /\.(png|jpg|jpeg|svg)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                      name: '/assets/[name].[ext]'
+                    }
+                }
             },
             // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
             { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
