@@ -31,13 +31,15 @@ class Menu extends Component<{}, State> {
         ];
         const { pageNumber } = this.state;
         return(
-        <div>
+        <div className='menu-container'>
             { items[pageNumber - 1] }
-            <Pagination
-                items={ items.length }
-                activePage={ pageNumber }
-                onSelect={ this.handleSelect }
-            />
+            <div className='pagination-container'>
+                <Pagination
+                    items={ items.length }
+                    activePage={ pageNumber }
+                    onSelect={ this.handleSelect }
+                />
+            </div>
         </div>);
     }
 
