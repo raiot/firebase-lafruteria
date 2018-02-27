@@ -57,3 +57,13 @@ declare module 'recompose' {
         compose
     }
 }
+
+interface Config {
+    GoogleMapsApi: string;
+}
+declare module '*.js'{
+    const config: Config;
+    export {
+        config
+    }
+}

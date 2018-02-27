@@ -4,6 +4,8 @@ import { withGoogleMap, withScriptjs, GoogleMap, Marker } from 'react-google-map
 import { compose, withProps } from 'recompose';
 import { Card } from 'react-materialize';
 
+import { config } from '../../../../config.js';
+
 class Branch extends Component {
 
     public render() {
@@ -34,7 +36,7 @@ class Branch extends Component {
 }
 
 const props = withProps({
-    googleMapURL: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDON8DG19a4DfoWlZ5eP9yKqRYnPVi1-t8',
+    googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${config.GoogleMapsApi}`,
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `400px` }} />,
     mapElement: <div style={{ height: `100%` }} />
