@@ -4,7 +4,7 @@
   "description": "",
   "main": "server/index.ts",
   "scripts": {
-    "start": "npm run clean && NODE_ENV=production webpack -p",
+    "start": "npm run clean && NODE_ENV=production webpack -p --display-error-details",
     "clean": "rm -rf dist",
     "start:dev": "npm start && webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -62,7 +62,8 @@ module.exports = {
       dead_code: true
     }),
     new HtmlWebpackPlugin({
-        template: 'index.html'
+        filename: 'index.html',
+        template: './template.html'
       })
   ]
 };

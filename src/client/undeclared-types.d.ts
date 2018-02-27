@@ -58,12 +58,7 @@ declare module 'recompose' {
     }
 }
 
-interface Config {
-    GoogleMapsApi: string;
-}
-declare module '*.js'{
-    const config: Config;
-    export {
-        config
-    }
+declare module '*config.ts'{
+    const config: string;
+    export default config;
 }

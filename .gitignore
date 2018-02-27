@@ -62,4 +62,4 @@ typings/
 .next
 
 #config files
-config.js
+src/client/config.ts
