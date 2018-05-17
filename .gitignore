@@ -62,4 +62,4 @@ typings/
 .next
 
 #config files
-src/client/config.ts
+src/client/maps-config.ts
