@@ -3,15 +3,14 @@ import { Component } from 'react';
 
 import { Navbar, NavItem } from 'react-materialize';
 
-import * as png from '../../assets/brand.png';
+import png from '../../assets/brand.png';
 
-import './nav.less';
+import './nav.css';
 
 export default
 class Nav extends Component {
-    public render () {
-        const src: any = png;
-        const brand = <img className='logo' src={ src } alt='la fruteria'/>
+    render () {
+        const brand = <img className='logo' src={ png } alt='la fruteria'/>
         return(
             <div>
                 <Navbar className='light-green lighten-1' brand={ brand } left>

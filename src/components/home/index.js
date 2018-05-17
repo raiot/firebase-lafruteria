@@ -1,27 +1,27 @@
-import * as React from 'react';
+import React from 'react';
 import { Component } from 'react';
 
 import { Slider, Slide, Button } from 'react-materialize';
 
-import * as greenJuice from '../../assets/home/green-juice.jpeg';
-import * as panini from '../../assets/home/panini.jpeg';
-import * as vampiro from '../../assets/home/vampiro.jpeg';
+import greenJuice from '../../assets/home/green-juice.jpeg';
+import panini from '../../assets/home/panini.jpeg';
+import vampiro from '../../assets/home/vampiro.jpeg';
 
-import './home.less';
+import './home.css';
 
 
 export default
 class Home extends Component {
-    public render() {
-        const defaultSlideStyle: any = {
+    render() {
+        const defaultSlideStyle = {
             color: '#fff',
             textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black'
         };
-        const secondSlideStyle: any = {
+        const secondSlideStyle = {
             color: '#000',
             textShadow: '-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white'
         };
-        const secondSlideText: any = <span style={ secondSlideStyle }>
+        const secondSlideText = <span style={ secondSlideStyle }>
             Panini con pan de chapata
         </span>;
         return(

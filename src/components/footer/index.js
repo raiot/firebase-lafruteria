@@ -3,14 +3,12 @@ import { Component } from 'react';
 
 import { Footer } from 'react-materialize';
 
-import * as fb from '../../assets/social-media/fb.png';
-import * as insta from '../../assets/social-media/instagram.png';
+import fb from '../../assets/social-media/fb.png';
+import insta from '../../assets/social-media/instagram.png';
 
 export default
 class FooterContainer extends Component {
-    public render () {
-        const fbImage: any = fb;
-        const instaImg: any = insta;
+    render () {
         const style = { maxWidth: '20px'};
         const aStyle = { textDecoration: 'none', color: '#000', fontSize: '1.2em' };
         const dStyle = { padding: '10px' };
@@ -22,7 +20,7 @@ class FooterContainer extends Component {
                     links={
                         <ul>
                             <li>
-                                <img style={ style } src={ instaImg } alt='instagram'/>
+                                <img style={ style } src={ insta } alt='instagram'/>
                                 <a
                                     rel='instagram la fruteria'
                                     href='https://instagram.com/lafruteriahmo'
@@ -33,7 +31,7 @@ class FooterContainer extends Component {
                                 </a>
                             </li>
                             <li>
-                            <img style={ style } src={ fbImage } alt='facebook' /> 
+                            <img style={ style } src={ fb } alt='facebook' /> 
                                 <a
                                     rel='facebook la fruteria'
                                     href='https://facebook.com/lafruteriahmo'

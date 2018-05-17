@@ -2,10 +2,10 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+}
 
-    img {
-        display: inline-block;
-    }
+.footer-container img {
+    display: inline-block;
 }
 
 #root {

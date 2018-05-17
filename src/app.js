@@ -1,18 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 import { Component } from 'react';
 
 import Footer from './components/footer';
 import Nav from './components/nav';
 
-
-
-interface Props {
-    children?: any;
-}
-
 export default 
-class AppRouter extends Component<Props, {}> {
-    public render () {
+class AppRouter extends Component {
+    render () {
         return(
             <div>
                 <Nav/>

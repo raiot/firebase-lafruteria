@@ -1,14 +1,15 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { HashRouter, Route, Switch } from 'react-router-dom';
+import registerServiceWorker from './registerServiceWorker';
 
 import App from './app';
 import Home from './components/home';
 import Branch from './components/branch';
 import Menu from './components/menu';
 
-import './less/materialize-font.less';
-import './less/index.less';
+import './styles/materialize-font.css';
+import './styles/index.css';
 
 ReactDOM.render(
     <HashRouter>
@@ -20,3 +21,4 @@ ReactDOM.render(
             </Switch>
         </App>
     </HashRouter>, document.getElementById( 'root' ));
+    registerServiceWorker();

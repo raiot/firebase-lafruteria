@@ -1,15 +1,15 @@
-import * as React from 'react';
+import React from 'react';
 import { Component } from 'react';
 import { withGoogleMap, withScriptjs, GoogleMap, Marker } from 'react-google-maps';
 import { compose, withProps } from 'recompose';
 import { Card } from 'react-materialize';
 
-import googleMapsKey from '../../maps-config.ts';
+import googleMapsKey from '../../maps-config.js';
 
 class Branch extends Component {
 
-    public render() {
-        const style: any = {
+    render() {
+        const style = {
             color: '#fff',
             fontSize: '1.3em'
         };
