@@ -62,5 +62,5 @@ typings/
 .next
 
 #config files
-src/client/maps-config.js
+src/maps-config.js
 build/
