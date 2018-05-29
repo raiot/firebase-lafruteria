@@ -1,11 +1,12 @@
 import React from 'react';
 import { Component } from 'react';
 
-import { Slider, Slide, Button } from 'react-materialize';
+import { Jumbotron } from 'reactstrap';
+import { Parallax } from 'react-scroll-parallax';
+import Branch from '../branch';
 
-import greenJuice from '../../assets/home/green-juice.jpeg';
-import panini from '../../assets/home/panini.jpeg';
-import vampiro from '../../assets/home/vampiro.jpeg';
+import parallRight from '../../assets/home/parall-right.png';
+import parallLeft from '../../assets/home/parall-left.png';
 
 import './home.css';
 
@@ -13,66 +14,63 @@ import './home.css';
 export default
 class Home extends Component {
     render() {
-        const defaultSlideStyle = {
-            color: '#fff',
-            textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black'
-        };
-        const secondSlideStyle = {
-            color: '#000',
-            textShadow: '-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white'
-        };
-        const secondSlideText = <span style={ secondSlideStyle }>
-            Panini con pan de chapata
-        </span>;
         return(
             <div>
-                <div className='carousel-container'>
-                    <Slider interval={ 3000 }>
-                        <Slide
-                            title={ <span style={ defaultSlideStyle }>Ingredientes frescos</span> }
-                            src={ greenJuice }
-                            placement={ 'left' }
-                            className='slide'
-                        >
-                            <p style={ defaultSlideStyle }>Prueba nuestro jugo verde</p>
-                            <Button
-                                waves='light'
-                                node='a'
-                                className='light-green lighten-1'
-                                href='#/menu'
+                <div>
+                    <Jumbotron fluid style={{
+                            textAlign: 'center'
+                        }}>
+                        <div className='parall-right'>
+                            <Parallax
+                                offsetXMax={-209}
+                                offsetXMin={-119}
+                                tag={'parall-left'}
+                                slowScrollRate
                             >
-                                Ver menú
-                            </Button>
-                        </Slide>
-                        <Slide
-                            title={ secondSlideText }
-                            src={ panini }
-                            placement={ 'left' }
-                        >
-                            <Button
-                                waves='light'
-                                node='a'
-                                className='light-green lighten-1'
-                                href='#/menu'
-                            >
-                                Ver menú
-                            </Button>
-                        </Slide>
-                        <Slide
-                            title={ <span style={ defaultSlideStyle }>Conoce nuestra variedad de jugos</span> }
-                            src={ vampiro }
-                            placement={ 'left' }
-                        >
-                            <Button
-                                waves='light'
-                                node='a'
-                                className='light-green lighten-1'
-                                href='#/menu'
-                            >
-                                Ver menú
-                            </Button>
-                        </Slide>
-                    </Slider>
+                                <img src={parallLeft} />
+                            </Parallax>
+                        </div>
+                        <div className='content-container'>
+                            <h1 className='display-3'>Snacks y comida saludable</h1>
+                            <p className='lead'>
+                                Ven a probar nuestra variedad de productos, desde deliciosos
+                                snacks como raspados, tostitos con verdura, hasta comida preparada
+                                como paninis, sandwich, comida corrida etc.
+                            </p>
+                        </div>
+                    </Jumbotron>
+                    <Jumbotron style={{
+                            textAlign: 'left'
+                        }}>
+                            <div className='parall-left'>
+                                <div className='content-container free'>
+                                    <h1 className='display-3'>Jugos y licuados</h1>
+                                    <p className='lead'>
+                                        Para empezar bien el dia prueba nuestros jugos y licuados
+                                        saludables que te mantendran lleno de energía.
+                                    </p>
+                                </div>
+                                <Parallax
+                                    offsetXMax={30}
+                                    offsetXMin={-59}
+                                    tag={'parall-right'}
+                                    slowScrollRate
+                                >
+                                    <img src={parallRight} style={{ display: 'inline-block'}} />
+                                </Parallax>
+                                </div>
+                    </Jumbotron>
+                    <Jumbotron style={{
+                            textAlign: 'center'
+                    }}>
+                        <div>
+                            <h1 className='display-3'>Aquí nos encuentras</h1>
+                            <p className='lead'>
+                                Blvd. López Portillo 53 local C
+                            </p>
+                        </div>
+                        <Branch />
+                    </Jumbotron>
                 </div>
             </div>
         );

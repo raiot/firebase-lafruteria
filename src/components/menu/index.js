@@ -1,6 +1,5 @@
 import React from 'react';
 import { Component } from 'react';
-import { Pagination } from 'react-materialize';
 
 import menuJuice from '../../assets/menu/menu-juice.jpg'
 import menuFood from '../../assets/menu/menu-food.jpg';
@@ -27,11 +26,6 @@ class Menu extends Component {
         <div className='menu-container'>
             { items[pageNumber - 1] }
             <div className='pagination-container'>
-                <Pagination
-                    items={ items.length }
-                    activePage={ pageNumber }
-                    onSelect={ this.handleSelect }
-                />
             </div>
         </div>);
     }

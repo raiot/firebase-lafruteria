@@ -2,14 +2,14 @@ import React from 'react';
 import { Component } from 'react';
 
 import Footer from './components/footer';
-import Nav from './components/nav';
+import Navigation from './components/nav';
 
 export default 
 class AppRouter extends Component {
     render () {
         return(
             <div>
-                <Nav/>
+                <Navigation/>
                 { this.props.children }
                 <Footer/>
             </div>
