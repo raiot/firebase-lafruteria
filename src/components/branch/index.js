@@ -8,10 +8,6 @@ import googleMapsKey from '../../maps-config.js';
 class Branch extends Component {
 
     render() {
-        const style = {
-            color: '#fff',
-            fontSize: '1.3em'
-        };
         return(
             <div>
                 <GoogleMap

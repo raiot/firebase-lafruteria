@@ -33,12 +33,8 @@ class Navigation extends Component {
             <div>
                 <Navbar dark expand='md'>
                     <NavbarBrand href='/'>
-                        <img src={png} style={{maxWidth: '100px', maxHeight: '50px'}} alt='la fruteria'/>
+                        <img src={png} style={{maxWidth: '200px', maxHeight: '100px'}} alt='la fruteria'/>
                     </NavbarBrand>
-                    <a href='#/' style={{ textDecoration: 'none', color: '#000' }}>
-                        <span className='nav-font-light'>La</span>
-                        <span className='nav-font'>frutería</span>
-                    </a>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className='ml-auto' navbar>

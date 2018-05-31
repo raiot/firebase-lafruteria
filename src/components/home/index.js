@@ -22,12 +22,12 @@ class Home extends Component {
                         }}>
                         <div className='parall-right'>
                             <Parallax
-                                offsetXMax={-209}
-                                offsetXMin={-119}
+                                offsetXMax={-299}
+                                offsetXMin={-129}
                                 tag={'parall-left'}
                                 slowScrollRate
                             >
-                                <img src={parallLeft} />
+                                <img src={parallLeft} alt='baguette' />
                             </Parallax>
                         </div>
                         <div className='content-container'>
@@ -42,7 +42,6 @@ class Home extends Component {
                     <Jumbotron style={{
                             textAlign: 'left'
                         }}>
-                            <div className='parall-left'>
                                 <div className='content-container free'>
                                     <h1 className='display-3'>Jugos y licuados</h1>
                                     <p className='lead'>
@@ -50,21 +49,22 @@ class Home extends Component {
                                         saludables que te mantendran lleno de energía.
                                     </p>
                                 </div>
-                                <Parallax
-                                    offsetXMax={30}
-                                    offsetXMin={-59}
-                                    tag={'parall-right'}
-                                    slowScrollRate
-                                >
-                                    <img src={parallRight} style={{ display: 'inline-block'}} />
-                                </Parallax>
+                                <div className='parall-left'>
+                                    <Parallax
+                                        offsetXMax={30}
+                                        offsetXMin={-59}
+                                        tag={'parall-right'}
+                                        slowScrollRate
+                                    >
+                                        <img src={parallRight} style={{ display: 'inline-block'}} alt='smoothie' />
+                                    </Parallax>
                                 </div>
                     </Jumbotron>
                     <Jumbotron style={{
                             textAlign: 'center'
                     }}>
                         <div>
-                            <h1 className='display-3'>Aquí nos encuentras</h1>
+                            <h1 className='display-3'>Encuéntranos</h1>
                             <p className='lead'>
                                 Blvd. López Portillo 53 local C
                             </p>

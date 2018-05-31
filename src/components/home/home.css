@@ -25,6 +25,22 @@
     max-width: 45%;
 }
 
-.parall-left div.parallax-inner {
+.parall-left {
     display: inline-block;
+    max-width: 45%;
+}
+
+@media (max-width: 767px) {
+    .parall-right, .parall-left {
+        display: none;
+    }
+
+    .content-container, .content-container.free {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .content-container h1 {
+        text-align: center;
+    }
 }

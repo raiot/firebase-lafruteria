@@ -1,6 +1,5 @@
 .navbar.navbar-expand-md {
-    background-color: #42b65b;
-    height: 150px;
+    background-color: rgba(145, 204, 80, 0.55);
 }
 
 .nav-item a {
