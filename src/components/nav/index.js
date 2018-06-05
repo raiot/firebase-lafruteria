@@ -42,10 +42,13 @@ class Navigation extends Component {
                                 <NavLink className='nav-font-light' href='#/'>Inicio</NavLink>
                             </NavItem>
                             <NavItem>
+                                <NavLink className='nav-font-light' href='#/promos'>Promociónes</NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink className='nav-font-light' href='#/branch'>Sucursal</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className='nav-font-light' href='#/menu'>Menú</NavLink>
+                                <NavLink className='nav-font-light' href='#/gallery'>Galería</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
