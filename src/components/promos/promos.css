@@ -1,0 +1,17 @@
+.promos {
+    min-height: 500px;
+    margin: 50px 0;
+}
+
+.promo {
+    background-color: rgba(55,195,71, 0.6);
+    max-width: 300px;
+    min-width: 300px;
+    padding: 10px;
+    display: inline-block;
+    margin:  0 30px;
+}
+
+h1 i {
+    margin-left: 40px;
+}

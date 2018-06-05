@@ -11,4 +11,9 @@
 #root {
     position: relative;
     min-height: 1200px;
+    margin: 0 5% 0 5%;
+}
+
+body {
+    background-color: #fafaee;
 }

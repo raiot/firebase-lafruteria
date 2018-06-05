@@ -2,34 +2,20 @@ import React from 'react';
 import { Component } from 'react';
 import { withGoogleMap, withScriptjs, GoogleMap, Marker } from 'react-google-maps';
 import { compose, withProps } from 'recompose';
-import { Card } from 'react-materialize';
 
 import googleMapsKey from '../../maps-config.js';
 
 class Branch extends Component {
 
     render() {
-        const style = {
-            color: '#fff',
-            fontSize: '1.3em'
-        };
         return(
             <div>
                 <GoogleMap
                     defaultZoom={16}
-                    defaultCenter={{ lat: 29.1185677, lng: -110.9558349 }}
+                    defaultCenter={{ lat: 29.1261038, lng: -110.9594614 }}
                 >
-                    <Marker position={{ lat: 29.118542, lng: -110.955546 }} />
+                    <Marker position={{ lat: 29.1261038, lng: -110.9594614 }} />
                 </GoogleMap>
-                <Card
-                    style= { {width: '30%', margin: '0 35%', marginTop: '10px'} }
-                    className='light-green lighten-1'
-                    textClassName='white-text'
-                    title='Dirección'>
-                    <span style={ style }>
-                        Calle Uno 42D, entre Avenida Nueve y Avenida Diez
-                    </span>
-                </Card>
             </div>
         );
     }

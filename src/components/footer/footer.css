@@ -1,0 +1,28 @@
+.footer {
+    background-color: rgb(45, 44, 44);
+    height: 150px;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-right: 45px;
+    text-align: right;
+}
+
+.footer ul li {
+    display: inline;
+    padding: 0 5px 0 5px;
+}
+
+.footer .follow-text {
+    padding-right: 45px;
+}
+
+i.fa {
+    font-size: 30px;
+    color: #fff;
+}
